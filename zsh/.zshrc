@@ -103,7 +103,6 @@ ZAH_THEME=""
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
     zsh-autosuggestions
-    zsh-z
     fast-syntax-highlighting
 )
 

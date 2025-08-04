@@ -49,6 +49,23 @@ npm -v # Should print "10.9.2".
 stow zsh
 ```
 
+安裝 oh-my-zsh
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+安裝其他套件
+
+- https://github.com/zdharma-continuum/fast-syntax-highlighting
+```bash
+git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
+```
+- https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
 ## wezterm
 
 ```bash
