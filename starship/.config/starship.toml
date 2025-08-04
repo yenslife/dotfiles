@@ -1,0 +1,58 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """($nix_shell$container$git_metrics\n)$cmd_duration\
+$hostname\
+$localip\
+$shlvl\
+$shell\
+$env_var\
+$jobs\
+$sudo\
+$username\
+$directory\
+
+$fill\
+
+$all\
+
+$line_break\
+
+$os\
+$character\
+"""
+
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[os]
+# 把 name 換成 symbol
+format = "[$symbol]($style)"
+style = "bold blue"
+disabled = false
+
+# This is the default symbols table.
+[os.symbols]
+Macos = " "
+
+[time]
+disabled = false
+format = "[ $time]($style) "
+style = "bold yellow"
+
+[fill]
+symbol = " "
+disabled = false
+
+[python]
+# .venv 也要，是因為我常常用 uv init
+python_binary = ['./.venv/bin/python', 'python3', 'python']
