@@ -3,7 +3,12 @@
 使用 GNU stow 來管理，目前有以下設定檔案，請務必安裝相關件。以下只能在 Ubuntu / MacOS 環境下使用。
 請先安裝 GNU stow
 
-使用 Homebrew 安裝
+建議安裝 Homebrew，很爽
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+使用 Homebrew 安裝 stow
 ```brew
 brew install stow
 ```
@@ -23,7 +28,7 @@ sudo apt-get install unzip -y
 sudo apt-get install git-all -y
 ```
 
-安裝 node
+安裝 node，與時俱進[ 連結 ](https://nodejs.org/en/download)
 
 ```
 # Download and install nvm:
