@@ -90,8 +90,8 @@ bindsym $mod+Shift+Right move right
 # # split in vertical orientation
 # bindsym $mod+v split v
 # Neovim like orientation shortcuts
-bindsym $mod+Shift+minus split h
-bindsym $mod+Shift+backslash split v
+bindsym $mod+Shift+backslash split h
+bindsym $mod+Shift+minus split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
