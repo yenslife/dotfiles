@@ -97,3 +97,15 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```bash
 stow starship
 ```
+
+## i3wm
+
+When using Ubuntu, I use i3 window manager, which is a tiling window manager. You can install it with the following command:
+
+ref: https://i3wm.org/docs/repositories.html
+
+```bash
+sudo apt install i3
+sudo apt install rofi # use rofi instead of dmenu, because it's cooler
+```
+
