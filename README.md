@@ -109,3 +109,25 @@ sudo apt install i3
 sudo apt install rofi # use rofi instead of dmenu, because it's cooler
 ```
 
+## 其他設定
+
+### Zen Browser
+一個跟 Arc 很像的瀏覽器，這邊我是使用 flatpak 來安裝的
+參考 https://flathub.org/apps/app.zen_browser.zen
+
+### iBus Chewing
+新酷音輸入法，在 i3 環境下使用要特別設定
+```bash
+sudo apt install ibus-chewing ibus
+```
+然後在終端機設定 ibus 新增 chewing 輸入法
+
+```bash
+ibus-setup
+```
+
+安裝酷酷的 bar
+```bash
+sudo apt install polybar
+```
+設定 https://github.com/polybar/polybar/wiki

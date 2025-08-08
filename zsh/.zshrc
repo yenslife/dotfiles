@@ -17,11 +17,6 @@ export PATH=$PATH:/Users/mac/ASCII-art
 #python
 #export PYTHONPATH=/Users/mac/Library/Python/3.9/lib/python/site-packages
 
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
 # python = python3
 # alias python='python3'
 
@@ -202,7 +197,7 @@ export PATH=~/bin:$PATH
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
-export PATH="$PATH:$(brew --prefix)/opt/llvm/bin"
+export PATH="$PATH:$(brew --prefix)/opt/llvm/bin" # macos only
 
 # Linux brew, comment out if you don't use it
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
