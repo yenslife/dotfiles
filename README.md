@@ -77,6 +77,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 stow wezterm
 ```
 
+查看可以用的字體
+```bash
+fc-list
+```
+
 ## Tmux
 
 ```bash
@@ -107,9 +112,19 @@ ref: https://i3wm.org/docs/repositories.html
 ```bash
 sudo apt install i3
 sudo apt install rofi # use rofi instead of dmenu, because it's cooler
+sudo apt install feh # for setting wallpaper
+sudo apt install picom # compositor for transparency (in my case, wezterm needs it to be transparent)
 ```
 
 ## 其他設定
+
+### 桌布
+
+使用 feh 設定桌布，將下載好的桌布放在 `~/Wallpapers` 資料夾下，然後執行以下指令：
+
+```bash
+feh --bg-scale ~/Wallpapers/your_wallpaper.jpg # 這一行也有放在 i3 的設定檔中
+```
 
 ### Zen Browser
 一個跟 Arc 很像的瀏覽器，這邊我是使用 flatpak 來安裝的

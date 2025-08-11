@@ -195,5 +195,11 @@ bindsym $mod+r mode "resize"
 # }
 # I remove the bar section, because I use polybar instead.
 
-# polybar
+# polybar，用 exec_always 的話只要 mod+Shift+r 就會重新啟動
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# background (換成自己的圖片路徑)
+exec_always --no-startup-id feh --bg-fill $HOME/Wallpapers/wallpaper-city-pop.png
+
+# picom (還沒設定，但是這樣就可以避免很多問題)
+exec --no-startup-id picom --config ~/.config/picom/picom.conf
