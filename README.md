@@ -1,5 +1,8 @@
 # dotfiles
 
+TODOs:
+- [ ] confugure alacritty fallback font (Iansui for Chinese and JetBrains Mono for English)
+
 使用 GNU stow 來管理，目前有以下設定檔案，請務必安裝相關件。以下只能在 Ubuntu / MacOS 環境下使用。
 請先安裝 GNU stow
 

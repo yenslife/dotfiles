@@ -50,10 +50,10 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec wezterm
+bindsym $mod+Return exec alacritty
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
@@ -173,7 +173,7 @@ mode "resize" {
         bindsym h resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
         bindsym j resize shrink height 10 px or 10 ppt
-        bindsym h resize grow width 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -204,3 +204,17 @@ exec_always --no-startup-id feh --bg-fill $HOME/Wallpapers/wallpaper-city-pop.pn
 
 # picom (還沒設定，但是這樣就可以避免很多問題)
 exec --no-startup-id picom --config ~/.config/picom/picom.conf
+
+# add gaps
+# 視窗邊框寬度
+for_window [class=".*"] border pixel 2  # 邊框像素數，0 = 無邊框
+
+# 內間距（視窗與視窗之間）
+gaps inner 10
+
+# 外間距（視窗與螢幕邊緣之間）
+gaps outer 2
+
+# 只在一個視窗時保留間距（預設一個視窗會全屏）
+# smart_gaps on
+
