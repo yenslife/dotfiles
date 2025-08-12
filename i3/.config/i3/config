@@ -203,11 +203,11 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id feh --bg-fill $HOME/Wallpapers/wallpaper-city-pop.png
 
 # picom (還沒設定，但是這樣就可以避免很多問題)
-exec --no-startup-id picom --config ~/.config/picom/picom.conf
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
 # add gaps
 # 視窗邊框寬度
-for_window [class=".*"] border pixel 4  # 邊框像素數，0 = 無邊框
+for_window [class=".*"] border pixel 0  # 邊框像素數
 
 # 內間距（視窗與視窗之間）
 gaps inner 10

@@ -150,6 +150,18 @@ sudo apt install feh # for setting wallpaper
 sudo apt install picom # compositor for transparency (in my case, wezterm needs it to be transparent)
 ```
 
+## picom
+
+I use picom to round the corners of windows and set transparency. You can install it with the following command:
+
+```bash
+stow picom
+```
+install it
+```bash
+sudo apt install picom
+```
+
 ## 其他設定
 
 ### 桌布
