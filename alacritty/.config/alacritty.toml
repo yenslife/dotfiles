@@ -31,3 +31,4 @@ multiplier = 3
 [window]
 decorations = "full"
 opacity = 0.9
+padding.x = 10
