@@ -89,7 +89,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 ## wezterm
 
-Update: I think Alacritty is better than Wezterm, especially when using it with Anydesk. I always feel laggy with Wezterm, so I switched to Alacritty.
+Update: I think Alacritty is better than Wezterm, especially when using it with Anydesk. I always feel laggy with Wezterm, so I switched to Alacritty (On Ubuntu). However, Wezterm is still a great terminal emulator with many features, so I keep it here and use it on MacOS.
 
 [ 官方連結 ](https://wezfurlong.org/wezterm/)
 
