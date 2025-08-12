@@ -1,8 +1,5 @@
 # dotfiles
 
-TODOs:
-- [ ] confugure alacritty fallback font (Iansui for Chinese and JetBrains Mono for English)
-
 使用 GNU stow 來管理，目前有以下設定檔案，請務必安裝相關件。以下只能在 Ubuntu / MacOS 環境下使用。
 請先安裝 GNU stow
 
@@ -50,6 +47,22 @@ nvm current # Should print "v22.17.1".
 # Verify npm version:
 npm -v # Should print "10.9.2".
 ```
+
+Check your $XDG_SESSION_TYPE 
+```bash
+echo $XDG_SESSION_TYPE
+```
+
+If it is `x11`, you need to install `xclip` for clipboard support in Neovim.
+```bash
+sudo apt install xclip
+```
+If it is `wayland`, you need to install `wl-clipboard` for clipboard support in Neovim.
+```bash
+sudo apt install wl-clipboard
+```
+
+Note that Anydesk does not support Wayland, what a miserable situation QQ.
 
 ## zsh
 
