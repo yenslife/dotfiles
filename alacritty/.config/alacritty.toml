@@ -1,0 +1,33 @@
+[colors.primary]
+background = "0x1e1e2e"
+foreground = "0xcdd6f4"
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[font]
+size = 18.0
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[mouse]
+hide_when_typing = true
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window]
+decorations = "full"
+opacity = 0.9

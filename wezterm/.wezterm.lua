@@ -20,9 +20,12 @@ config.font = wezterm.font("JetBrains Mono")
 -- Window style
 config.window_frame = {
 	active_titlebar_bg = "#1b1b1b",
+	-- active_titlebar_bg = "none",
 	inactive_titlebar_bg = "#1b1b1b",
 	-- 標題列文字顏色
 	active_titlebar_fg = "#c0c0c0",
+	-- active_titlebar_fg = "#000000",
+	-- active_titlebar_fg = "none",
 	inactive_titlebar_fg = "#555555",
 }
 

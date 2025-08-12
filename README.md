@@ -73,6 +73,10 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 ## wezterm
 
+Update: I think Alacritty is better than Wezterm, especially when using it with Anydesk. I always feel laggy with Wezterm, so I switched to Alacritty.
+
+[ 官方連結 ](https://wezfurlong.org/wezterm/)
+
 ```bash
 stow wezterm
 ```
@@ -80,6 +84,20 @@ stow wezterm
 查看可以用的字體
 ```bash
 fc-list
+```
+
+## alacritty
+
+A replacement for Wezterm
+[ 官方連結 ](https://alacritty.org/config-alacritty.html)
+
+```bash
+stow alacritty
+```
+
+Install Alacritty on Ubuntu:
+```bash
+sudo apt install alacritty
 ```
 
 ## Tmux
