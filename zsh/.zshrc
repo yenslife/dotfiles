@@ -193,11 +193,11 @@ alias uvnvim='uv run nvim'
 # 為了 chezmoi，不過我之後應該會改用 GNU stow
 export PATH=~/bin:$PATH
 
-# os in 1000 lines 要用的，如果有開發其他系統軟體也可以用
-export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
-export PATH="$PATH:$(brew --prefix)/opt/llvm/bin" # macos only
+# # os in 1000 lines 要用的，如果有開發其他系統軟體也可以用
+# export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+# export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+# export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+# export PATH="$PATH:$(brew --prefix)/opt/llvm/bin" # macos only
 
 # Linux brew, comment out if you don't use it
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
