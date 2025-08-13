@@ -200,9 +200,11 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # background (換成自己的圖片路徑)
-exec_always --no-startup-id feh --bg-fill $HOME/Wallpapers/wallpaper-city-pop.png
+# 因為我超喜歡 Hiroshi Nagai 的風格，也很喜歡 <Ryusenkei - Shooting Star Of Love Part Ⅱ> 這首歌，所以目前只有 city pop 系列
+# 每 15 分鐘隨機更換一次，不要用 exec_always，因為只要 mod+Shift+r 就會重新啟動，這樣就會一直重複執行
+exec --no-startup-id sh -c 'while true; do feh --randomize --bg-fill $HOME/Wallpapers/wallpaper-city-pop-*.png; sleep 900; done'
 
-# picom (還沒設定，但是這樣就可以避免很多問題)
+# Picom (compositor)
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
 # add gaps
