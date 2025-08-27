@@ -220,3 +220,8 @@ gaps outer 2
 # 只在一個視窗時保留間距（預設一個視窗會全屏）
 # smart_gaps on
 
+# mouse ocr
+bindsym $mod+Shift+o exec --no-startup-id mouse-ocr
+
+# 截圖軟體 flameshot
+exec --no-startup-id flameshot &
