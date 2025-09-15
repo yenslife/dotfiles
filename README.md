@@ -16,7 +16,7 @@ brew install stow
 ## nvim
 
 ```bash
-stow nvim
+stow neovim
 ```
 
 ```bash
