@@ -64,6 +64,9 @@ sudo apt install wl-clipboard
 
 Note that Anydesk does not support Wayland, what a miserable situation QQ.
 
+建議在裝好後執行 `:checkhealth telescope` 來看看有沒有缺少 telescope 建議的套件，像是 ripgrep 或者 fd 都是可以更快速找大 codebase 的好東西
+直接執行 `:checkhealth` 也可以
+
 ## zsh
 
 ```bash
