@@ -201,7 +201,20 @@ sudo apt install polybar
 ```
 設定 https://github.com/polybar/polybar/wiki
 
+### 安裝字體
+
+你可以到這個網站去下載 JetBrain 字體，然後把有 `.ttf` 的檔案放到 `~/.local/share/fonts`
+因為這個設定檔的所有字體都是用 JetBrain
+
+https://www.nerdfonts.com/font-downloads
+
+### 多螢幕
+
+如果你有多個螢幕要設定，可以用 arandr 這個工具
+
+```bash
+sudo apt install arandr
+```
 
 ## TODOs
-- [ ] font setup
 - [ ] multi monitor
