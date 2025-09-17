@@ -200,3 +200,8 @@ ibus-setup
 sudo apt install polybar
 ```
 設定 https://github.com/polybar/polybar/wiki
+
+
+## TODOs
+- [ ] font setup
+- [ ] multi monitor
