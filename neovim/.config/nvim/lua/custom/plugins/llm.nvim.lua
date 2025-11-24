@@ -111,7 +111,7 @@ return {
               -- 模型設定 (必須支援 FIM - Fill-In-Middle)
               -- 例如使用 ollama 跑 qwen2.5-coder 目前好像只支援 ollama 和 deepseek
               url = 'http://localhost:11434/v1/completions',
-              model = 'qwen2.5-coder:0.5b',
+              model = 'qwen2.5-coder:1.5b',
               api_type = 'ollama',
 
               -- 補全參數
@@ -144,9 +144,9 @@ return {
     keys = {
       { '<leader>ac', mode = 'n', '<cmd>LLMSessionToggle<cr>' },
       -- Your AI Tools Key mappings
-      { '<leader>ts', mode = 'v', '<cmd>LLMAppHandler WordTranslate<cr>' },
-      { '<leader>aask', mode = 'v', '<cmd>LLMAppHandler AttachAsk<cr>' },
-      { '<leader>ask', mode = 'v', '<cmd>LLMSelectedTextHandler 請問這段程式碼在做什麼？<cr>' },
+      { '<leader>ts', mode = 'v', '<cmd>LLMAppHandler WordTranslate<cr>', desc = '翻譯' },
+      { '<leader>aask', mode = 'v', '<cmd>LLMAppHandler AttachAsk<cr>', desc = '將選取內容附加到聊天' },
+      { '<leader>ask', mode = 'v', '<cmd>LLMSelectedTextHandler 請問這段程式碼在做什麼？<cr>', desc = '詢問選取內容的用途' },
       -- { '<leader>ts', mode = 'v', '<cmd>LLMSelectedTextHandler<cr>' },
       --    |                 |                             |
       -- your key mapping  your mode                    tool name
