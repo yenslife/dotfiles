@@ -89,7 +89,6 @@ P.S. You can delete this when you're done too. It's your config now! :)
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
 
@@ -915,13 +914,13 @@ require('lazy').setup({
     end,
   },
   -- other colorschemes
-  {
-    'ellisonleao/gruvbox.nvim',
-    priority = 1000,
-    config = true,
-  },
+  -- {
+  --   'ellisonleao/gruvbox.nvim',
+  --   priority = 10000,
+  --   config = true,
+  -- },
   { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
-  { 'EdenEast/nightfox.nvim' },
+  { 'EdenEast/nightfox.nvim', priority = 1000 },
 
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },

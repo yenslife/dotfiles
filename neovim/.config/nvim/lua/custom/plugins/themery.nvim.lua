@@ -3,7 +3,7 @@ return {
   lazy = false,
   config = function()
     -- 在這邊新增主題
-    local keywords = { 'tokyonight', 'gruvbox', 'catppuccin', 'fox' }
+    local keywords = { 'cyberdream', 'fox', 'tokyonight', 'catppuccin' } -- 不知道為什麼 gruvbox 有時候會壞掉
     local all_themes = vim.fn.getcompletion('', 'color')
 
     local selected_theme = vim.tbl_filter(function(name)
@@ -17,8 +17,8 @@ return {
 
     require('themery').setup {
       -- add the config here
-      themes = selected_theme,
-      -- themes = all_themes,
+      -- themes = selected_theme,
+      themes = all_themes,
     }
     -- show Thmery menu using <leader>T
     vim.keymap.set('n', '<leader>T', ':Themery <CR>', { noremap = true, desc = 'Show Themery Menu' })
