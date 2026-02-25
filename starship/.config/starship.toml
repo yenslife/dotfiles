@@ -56,3 +56,7 @@ disabled = false
 [python]
 # .venv 也要，是因為我常常用 uv init
 python_binary = ['./.venv/bin/python', 'python3', 'python']
+
+[swift]
+# disabled = true
+format = 'via [swift ](red bold)' # 因為 swift --version 跑很久，所以先顯示目前專案是 swift 就好
