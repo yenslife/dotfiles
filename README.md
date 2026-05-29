@@ -74,6 +74,11 @@ Note that Anydesk does not support Wayland, what a miserable situation QQ.
 
 如果你遇到 `Failed to run config for nvim-treesitter` 的問題，可以嘗試把 `:~/.local/share/nvim/lazy/nvim-treesitter` 從 main branch 切換到 master branch，我是參考[這個 reddit 討論的](https://www.reddit.com/r/neovim/comments/1nvf3ss/neovim_treesitter_error/)
 
+如果 `tree-sitter-cli not found` 那可以執行
+```bash
+npm install -g tree-sitter-cli
+```
+
 ## zsh
 
 ```bash
