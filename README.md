@@ -9,8 +9,13 @@
 ```
 
 使用 Homebrew 安裝 stow
-```brew
+```bash
 brew install stow
+```
+
+或者用 apt 也可以
+```bash
+sudo apt install stow
 ```
 
 ## nvim
@@ -32,22 +37,22 @@ sudo apt-get install git-all -y
 
 ```
 # Download and install nvm:
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
 
 # in lieu of restarting the shell
 \. "$HOME/.nvm/nvm.sh"
 
 # Download and install Node.js:
-nvm install 22
+nvm install 24
 
 # Verify the Node.js version:
-node -v # Should print "v22.17.1".
-nvm current # Should print "v22.17.1".
+node -v # Should print "v24.16.0".
 
 # Verify npm version:
-npm -v # Should print "10.9.2".
+npm -v # Should print "11.13.0".
 ```
 
+下面這些應該不需要了，因為改用 OSC 52
 Check your $XDG_SESSION_TYPE 
 ```bash
 echo $XDG_SESSION_TYPE
@@ -217,6 +222,3 @@ https://www.nerdfonts.com/font-downloads
 ```bash
 sudo apt install arandr
 ```
-
-## TODOs
-- [ ] multi monitor
