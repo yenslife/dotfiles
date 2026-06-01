@@ -113,6 +113,13 @@ vim.o.showmode = false
 vim.schedule(function()
   vim.o.clipboard = 'unnamedplus'
 
+  local function paste()
+    return {
+      vim.fn.split(vim.fn.getreg '', '\n'),
+      vim.fn.getregtype '',
+    }
+  end
+
   -- 使用 Neovim 內建安全的 OSC 52 Provider，不自己用 io.write 拼字串
   vim.g.clipboard = {
     name = 'OSC 52',
@@ -121,8 +128,8 @@ vim.schedule(function()
       ['*'] = require('vim.ui.clipboard.osc52').copy '*',
     },
     paste = {
-      ['+'] = require('vim.ui.clipboard.osc52').paste '+',
-      ['*'] = require('vim.ui.clipboard.osc52').paste '*',
+      ['+'] = paste,
+      ['*'] = paste,
     },
   }
 end)
