@@ -1,5 +1,6 @@
 -- Pull in the wezterm API
 local wezterm = require("wezterm")
+local act = wezterm.action
 
 -- This will hold the configuration.
 local config = wezterm.config_builder()
@@ -35,6 +36,32 @@ config.window_padding = {
 }
 
 config.window_background_opacity = 0.93
+
+config.keys = {
+	-- 切換 tab
+	{
+		key = "h",
+		mods = "ALT",
+		action = act.ActivateTabRelative(-1),
+	},
+	{
+		key = "l",
+		mods = "ALT",
+		action = act.ActivateTabRelative(1),
+	},
+
+	-- 移動目前 tab 的位置
+	{
+		key = "h",
+		mods = "ALT|SHIFT",
+		action = act.MoveTabRelative(-1),
+	},
+	{
+		key = "l",
+		mods = "ALT|SHIFT",
+		action = act.MoveTabRelative(1),
+	},
+}
 
 -- Finally, return the configuration to wezterm:
 return config
