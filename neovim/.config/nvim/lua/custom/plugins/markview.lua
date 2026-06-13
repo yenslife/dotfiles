@@ -10,5 +10,8 @@ return {
     preview = {
       enable = false,
     },
+    latex = {
+      enable = true,
+    },
   },
 }
