@@ -35,7 +35,7 @@ config.window_padding = {
 	bottom = 0,
 }
 
-config.window_background_opacity = 0.93
+-- config.window_background_opacity = 0.88
 
 config.keys = {
 	-- 切換 tab
