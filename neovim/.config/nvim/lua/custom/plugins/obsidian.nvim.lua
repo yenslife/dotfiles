@@ -24,5 +24,8 @@ return {
       format = '{{backlinks}} backlinks  {{words}} words  {{chars}} chars',
     },
     conceallevel = 1,
+    ui = {
+      enable = false,
+    },
   },
 }
