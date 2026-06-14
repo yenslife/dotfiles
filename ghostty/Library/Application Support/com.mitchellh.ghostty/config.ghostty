@@ -1,0 +1,49 @@
+# 目前會想要使用 ghostty 唯一的原因是，想要在 Neovim 中直接用 snack.nvim 看到圖片，但 Wezterm 看不到。
+# 不過誰說我不能一次用兩個終端機呢？小孩才做選擇
+# 設定好後可以用 Cmd + Shift + , 來 reload，調整透明度這種事情就很適合
+# 下面是我參考 https://gist.github.com/dhh/a4b7de450276e336e3badec34fec0a75 的設定
+# Tokyo Night 的風格
+
+# Font configuration
+font-family = CaskaydiaMono Nerd Font
+font-size = 24
+#
+# # Window settings
+# window-padding-x = 14
+# window-padding-y = 14
+# window-decoration = false
+background-opacity = 0.88
+
+# Terminal settings
+# 因為要 ssh 的機器幾乎都不支援 xterm-ghostty 所以這邊改成 xterm-256color，有點可惜
+term = xterm-256color
+
+# Keybindings
+keybind = f11=toggle_fullscreen
+
+# Color scheme from omarchy theme
+background = 1a1b26
+foreground = a9b1d6
+
+# Normal colors
+palette = 0=#32344a
+palette = 1=#f7768e
+palette = 2=#9ece6a
+palette = 3=#e0af68
+palette = 4=#7aa2f7
+palette = 5=#ad8ee6
+palette = 6=#449dab
+palette = 7=#787c99
+
+# Bright colors
+palette = 8=#444b6a
+palette = 9=#ff7a93
+palette = 10=#b9f27c
+palette = 11=#ff9e64
+palette = 12=#7da6ff
+palette = 13=#bb9af7
+palette = 14=#0db9d7
+palette = 15=#acb0d0
+
+# Selection color
+selection-background = 7aa2f7
