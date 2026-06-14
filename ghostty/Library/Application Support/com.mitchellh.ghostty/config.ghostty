@@ -5,9 +5,9 @@
 # Tokyo Night 的風格
 
 # Font configuration
-font-family = CaskaydiaMono Nerd Font
 font-size = 30
-#
+font-family = JetBrains Mono
+
 # # Window settings
 window-padding-x = 20
 window-padding-y = 20
