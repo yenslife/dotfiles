@@ -18,8 +18,8 @@ window-padding-y = 20
 # 因為要 ssh 的機器幾乎都不支援 xterm-ghostty 所以這邊改成 xterm-256color，有點可惜
 term = xterm-256color
 
-# Mac Opt 設定
-macos-option-as-alt = left # 把左邊的 option key 設為 alt
+# Mac Opt 設定，把左邊的 option key 設為 alt
+macos-option-as-alt = left
 
 # Keybindings
 # keybind = f11=toggle_fullscreen
