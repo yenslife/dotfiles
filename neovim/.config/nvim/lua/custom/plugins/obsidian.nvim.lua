@@ -7,8 +7,8 @@ return {
     legacy_commands = false, -- this will be removed in 4.0.0
     workspaces = {
       {
-        name = 'Research',
-        path = '~/Research/',
+        name = 'questions-and-things',
+        path = '~/questions-and-things',
       },
     },
     frontmatter = {
