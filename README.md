@@ -108,10 +108,16 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 brew install fzf
 ```
 
-還有 lazygit 更爽了
+## lazygit
+
+安裝
 
 ```bash
 brew install lazygit
+```
+
+```bash
+stow lazygit
 ```
 
 ## wezterm

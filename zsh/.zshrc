@@ -215,4 +215,5 @@ alias fly='cd /Users/mac/SideProject/boids-simulation && uv run main.py'
 
 # fzf
 source <(fzf --zsh)
-alias lg='lazygit'
+# alias lg='lazygit'
+alias lg='lazygit --use-config-file ~/.config/lazygit/config.yml'
