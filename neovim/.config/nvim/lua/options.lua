@@ -1,4 +1,9 @@
 -- 針對不同語言設定縮排
+vim.g.python_indent = vim.tbl_extend('force', vim.g.python_indent or {}, {
+  open_paren = 'shiftwidth()',
+  closed_paren_align_last_line = false,
+})
+
 vim.api.nvim_create_autocmd('FileType', {
   pattern = { 'python' },
   callback = function()
