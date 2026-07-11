@@ -212,3 +212,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # 螢幕保護程式
 alias fly='cd /Users/mac/SideProject/boids-simulation && uv run main.py'
+
+# fzf
+source <(fzf --zsh)
+alias lg='lazygit'

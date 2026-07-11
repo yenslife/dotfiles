@@ -102,6 +102,18 @@ git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZS
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
+建議安裝 fzf，很爽
+
+```bash
+brew install fzf
+```
+
+還有 lazygit 更爽了
+
+```bash
+brew install lazygit
+```
+
 ## wezterm
 
 Update: I think Alacritty is better than Wezterm, especially when using it with Anydesk. I always feel laggy with Wezterm, so I switched to Alacritty (On Ubuntu). However, Wezterm is still a great terminal emulator with many features, so I keep it here and use it on MacOS.
