@@ -6,14 +6,15 @@
 
 # Font configuration
 font-size = 30
-font-family = JetBrains Mono
+#font-family = JetBrains Mono
 font-family = JetBrainsMono Nerd Font Mono Regular
+font-family = Iansui-Regular
 
 # # Window settings
 window-padding-x = 20
 window-padding-y = 20
 # window-decoration = false
-# background-opacity = 0.88
+# background-opacity = 0.80
 
 # Terminal settings
 # 因為要 ssh 的機器幾乎都不支援 xterm-ghostty 所以這邊改成 xterm-256color，有點可惜
@@ -59,3 +60,4 @@ palette = 15=#eff6ff
 # Selection color
 selection-background = 2563eb
 selection-foreground = eff6ff
+

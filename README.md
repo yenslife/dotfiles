@@ -120,6 +120,14 @@ brew install lazygit
 stow lazygit
 ```
 
+## Ghostty
+
+超讚的終端機，主要是它支援在 neovim 看 markdown 圖片
+
+```bash
+stow ghostty
+```
+
 ## wezterm
 
 Update: I think Alacritty is better than Wezterm, especially when using it with Anydesk. I always feel laggy with Wezterm, so I switched to Alacritty (On Ubuntu). However, Wezterm is still a great terminal emulator with many features, so I keep it here and use it on MacOS.
