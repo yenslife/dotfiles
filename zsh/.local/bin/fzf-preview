@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+file=$1
+
+if [ -d "$file" ]; then
+  ls -la -- "$file"
+elif command -v bat >/dev/null 2>&1; then
+  bat --color=always --style=numbers --line-range=:500 -- "$file"
+elif command -v batcat >/dev/null 2>&1; then
+  batcat --color=always --style=numbers --line-range=:500 -- "$file"
+else
+  sed -n '1,500p' -- "$file"
+fi
