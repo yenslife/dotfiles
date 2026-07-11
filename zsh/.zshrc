@@ -213,7 +213,45 @@ export NVM_DIR="$HOME/.nvm"
 # 螢幕保護程式
 alias fly='cd /Users/mac/SideProject/boids-simulation && uv run main.py'
 
-# fzf
+# fzf 好用函式，以及快速用 neovim 開檔案
 source <(fzf --zsh)
+
+fzf-preview() {
+  local file="$1"
+
+  if [[ -d "$file" ]]; then
+    command ls -la -- "$file"
+  elif command -v bat >/dev/null 2>&1; then
+    bat --color=always --style=numbers --line-range=:500 -- "$file"
+  else
+    sed -n '1,500p' -- "$file"
+  fi
+}
+
+vf() {
+  local file
+
+  file=$(
+    fd --type f --hidden --exclude .git |
+      fzf --preview 'fzf-preview {}'
+  ) || return
+
+  [[ -n "$file" ]] && nvim "$file"
+}
+
+vfm() {
+  local -a files
+
+  files=("${(@f)$(
+    fd --type f --hidden --exclude .git |
+      fzf --multi \
+          --preview 'fzf-preview {}' \
+          --bind 'ctrl-a:select-all,ctrl-d:deselect-all'
+  )}") || return
+
+  (( ${#files[@]} )) && nvim "${files[@]}"
+}
+
 # alias lg='lazygit'
 alias lg='lazygit --use-config-file ~/.config/lazygit/config.yml'
+

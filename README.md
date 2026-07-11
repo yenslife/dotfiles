@@ -108,6 +108,12 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 brew install fzf
 ```
 
+還有 bat 一切都會變漂亮
+
+```bash
+brew install bat
+```
+
 ## lazygit
 
 安裝
