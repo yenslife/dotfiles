@@ -9,6 +9,8 @@ return {
   opts = {
     preview = {
       enable = false,
+      -- 在這些 mode 下，游標所在的元素會顯示原始 Markdown
+      hybrid_modes = { 'n' },
     },
     latex = {
       enable = true,
