@@ -49,6 +49,17 @@ vim.api.nvim_create_autocmd('FileType', {
   end,
 })
 
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 'c', 'cpp' },
+  callback = function()
+    vim.opt_local.tabstop = 4
+    vim.opt_local.shiftwidth = 4 -- >> << 操作也是四個空格
+    vim.opt_local.softtabstop = 4
+    vim.opt_local.expandtab = true -- 按下 tab 會出現空格
+    vim.opt_local.cindent = true
+  end,
+})
+
 vim.keymap.set('i', 'jj', '<Esc>')
 vim.keymap.set('n', '<leader>-', ':split<CR>', { desc = 'Split window horizontally', noremap = true, silent = true })
 vim.keymap.set('n', '<leader>|', ':vsplit<CR>', { desc = 'Split window vertically', noremap = true, silent = true })
