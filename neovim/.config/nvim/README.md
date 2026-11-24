@@ -45,6 +45,12 @@ git clone https://github.com/yenslife/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HO
 
 ## 主題切換
 
+### macOS Day 白天主題
+
+內建自訂主題 `macos-day`，以 macOS Terminal 的簡潔風格為靈感，使用暖白背景、石墨灰文字與系統藍重點色。這不是 Apple 官方配色。搭配 Ghostty 的 `macOS Day` 可讓視窗留白與編輯區底色一致。
+
+執行 `:colorscheme macos-day` 可立即試用，或在 `<leader>T` 選擇 `macos-day` 並按 Enter 儲存。主題使用不透明背景，包含語法、Tree-sitter、LSP 診斷、差異比較與常用外掛的配色。配色定義位於 `colors/macos-day.lua`，不需要安裝新外掛。
+
 在一般模式按「空白鍵 → Shift+T」開啟主題選單。使用 `j/k` 或上下方向鍵預覽，按 Enter 套用並儲存游標所在的主題；也支援用滑鼠或其他移動指令選取後按 Enter。按 Esc 取消。
 
 ## Markdown 預覽外掛
