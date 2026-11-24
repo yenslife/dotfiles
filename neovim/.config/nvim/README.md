@@ -43,6 +43,16 @@ git clone https://github.com/yenslife/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HO
 3. `:Mason` 安裝需要的 LSP
 4. 差不多了，可以搭配 Tmux 使用
 
+## 主題切換
+
+在一般模式按「空白鍵 → Shift+T」開啟主題選單。使用 `j/k` 或上下方向鍵預覽，按 Enter 套用並儲存游標所在的主題；也支援用滑鼠或其他移動指令選取後按 Enter。按 Esc 取消。
+
+## Markdown 預覽外掛
+
+`markdown-preview.nvim` 使用外掛提供的 `mkdp#util#install()` 安裝預編譯程式，避免透過 Yarn 安裝時，Corepack 自動修改外掛的 `package.json`，導致 lazy.nvim 無法更新。
+
+若需要重新安裝預覽程式，可在 `:Lazy` 選取 `markdown-preview.nvim` 後按 `gb` 執行 build。安裝過程需要網路連線。
+
 ## Introduction
 
 A starting point for Neovim that is:

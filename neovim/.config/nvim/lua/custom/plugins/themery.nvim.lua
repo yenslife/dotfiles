@@ -21,6 +21,18 @@ return {
       themes = all_themes,
     }
     -- show Thmery menu using <leader>T
-    vim.keymap.set('n', '<leader>T', ':Themery <CR>', { noremap = true, desc = 'Show Themery Menu' })
+    vim.keymap.set('n', '<leader>T', function()
+      local themery = require 'themery'
+      themery.themery()
+      -- Themery 原本的 Enter 只儲存預覽位置，沒有套用游標所在的主題。
+      vim.keymap.set('n', '<CR>', function()
+        local index = vim.api.nvim_win_get_cursor(0)[1] - 1
+        if index < 1 or index > #themery.getAvailableThemes() then
+          return
+        end
+        themery.setThemeByIndex(index, false)
+        themery.closeAndSave()
+      end, { buffer = true, silent = true, desc = '套用並儲存主題' })
+    end, { desc = 'Show Themery Menu' })
   end,
 }
