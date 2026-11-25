@@ -8,7 +8,7 @@
 set -g @appearance 'day'
 ```
 
-- `day`：自訂 Powerline Day，暖白底、淺藍與灰色分段，搭配 macOS Day。
+- `day`：自訂 Powerline Day，純白底、Terminal Basic 藍色與灰色分段，搭配 macOS Day。
 - `night`：原本的 Powerline Cyan。
 
 兩者保留相同資訊：session、使用者、視窗與窗格編號、視窗列表、時間、日期與主機名稱。白天版沿用 tmux-themepack 的資訊格式選項，只覆寫配色與箭頭分段的顏色；不修改外掛檔案。
