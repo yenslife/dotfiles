@@ -28,4 +28,4 @@ macos-option-as-alt = left
 
 # 白天：macOS Day 或 TokyoNight Day；晚上：TokyoNight Custom
 theme = TokyoNight Custom
-#theme = macOS Day
+# theme = macOS Day
