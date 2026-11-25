@@ -8,10 +8,10 @@ end
 vim.g.colors_name = 'macos-day'
 
 local c = {
-  bg = '#faf9f6', fg = '#242426', panel = '#f0efec', line = '#efeeeb',
-  muted = '#6c6c72', border = '#c9c8c4', blue = '#005fbd',
-  red = '#b42332', green = '#287343', amber = '#8a5900',
-  purple = '#8641a4', cyan = '#006d77', selection = '#cfe3ff',
+  bg = '#ffffff', fg = '#000000', panel = '#f2f2f2', line = '#f5f5f5',
+  muted = '#666666', border = '#cccccc', blue = '#0000b2',
+  red = '#990000', green = '#00a600', amber = '#999900',
+  purple = '#b200b2', cyan = '#00a6b2', selection = '#a4c9ff',
 }
 local function hi(names, spec)
   for name in names:gmatch '%S+' do
@@ -27,19 +27,19 @@ link('NormalNC EndOfBuffer', 'Normal')
 hi('NormalFloat Pmenu', { fg = c.fg, bg = c.panel })
 hi('FloatBorder WinSeparator', { fg = c.border, bg = c.bg })
 hi('FloatTitle Title', { fg = c.blue, bold = true })
-hi('Cursor', { fg = '#ffffff', bg = '#0066cc' })
+hi('Cursor', { fg = '#000000', bg = '#7f7f7f' })
 hi('CursorLine CursorColumn ColorColumn', { bg = c.line })
 hi('LineNr SignColumn FoldColumn', { fg = c.muted, bg = c.bg })
 hi('CursorLineNr', { fg = c.blue, bg = c.line, bold = true })
 hi('NonText Whitespace SpecialKey', { fg = c.border })
-hi('Visual PmenuSel', { fg = '#1d304d', bg = c.selection })
+hi('Visual PmenuSel', { fg = '#000000', bg = c.selection })
 hi('Search', { fg = c.fg, bg = '#f3e2ad' })
 hi('IncSearch CurSearch', { fg = '#ffffff', bg = c.blue })
 hi('MatchParen', { fg = c.blue, bg = c.selection, bold = true })
-hi('StatusLine TabLineSel', { fg = c.fg, bg = '#e5e4e0', bold = true })
+hi('StatusLine TabLineSel', { fg = c.fg, bg = '#e5e5e5', bold = true })
 hi('StatusLineNC TabLine TabLineFill WinBarNC', { fg = c.muted, bg = c.panel })
 hi('WinBar', { fg = c.fg, bg = c.bg })
-hi('PmenuSbar', { bg = '#e5e4e0' })
+hi('PmenuSbar', { bg = '#e5e5e5' })
 hi('PmenuThumb', { bg = c.border })
 hi('Folded', { fg = c.muted, bg = c.panel })
 hi('Directory Function', { fg = c.blue })
@@ -100,7 +100,7 @@ hi('TelescopeMatching', { fg = c.blue, bold = true })
 link('TelescopeTitle WhichKey WhichKeyGroup OilDir SnacksPickerDir', 'Title')
 link('WhichKeyDesc SnacksPickerNormal', 'NormalFloat')
 link('WhichKeyBorder SnacksPickerBorder', 'FloatBorder')
-hi('IblIndent', { fg = '#e1e0dc' })
+hi('IblIndent', { fg = '#e5e5e5' })
 hi('IblScope', { fg = c.border })
 link('MiniStatuslineModeNormal', 'PmenuSel')
 link('MiniStatuslineModeInsert', 'DiffAdd')
@@ -109,8 +109,8 @@ link('MiniStatuslineInactive MiniStatuslineFilename', 'StatusLineNC')
 link('MiniStatuslineDevinfo MiniStatuslineFileinfo', 'StatusLine')
 
 local terminal = {
-  '#242426', c.red, c.green, c.amber, c.blue, c.purple, c.cyan, '#59595e',
-  c.muted, '#c52d3a', '#207a46', '#956200', '#006bd6', '#9650b1', '#007783', '#747478',
+  '#000000', c.red, c.green, c.amber, c.blue, c.purple, c.cyan, '#bfbfbf',
+  c.muted, '#e50000', '#00d900', '#bfbf00', '#0000ff', '#e500e5', '#00d8d8', '#e5e5e5',
 }
 for i, color in ipairs(terminal) do
   vim.g['terminal_color_' .. (i - 1)] = color
