@@ -1,3 +1,4 @@
+return {}
 -- return {
 --   'Exafunction/windsurf.nvim',
 --   dependencies = {
@@ -9,7 +10,7 @@
 --   end,
 -- }
 --
-return {
-  'Exafunction/windsurf.vim',
-  event = 'BufEnter',
-}
+-- return {
+--   'Exafunction/windsurf.vim',
+--   event = 'BufEnter',
+-- }
